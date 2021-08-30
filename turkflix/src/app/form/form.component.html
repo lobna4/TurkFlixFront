@@ -1,0 +1,35 @@
+<!-- <div class="formulaire">
+    <div class="title">
+        <P>Demande de nouveaux contenus</P>
+    </div>
+    <form class="input" action="mailto:kharratlobna1@gmail.com" method="GET" enctype="text/plain">
+        <div class="input-group mb-3">
+            <label class="input-group-text" for="type">Type</label>
+            <select class="form-select" id="type" name="type">
+                <option selected>Genre</option>
+                <option value="2">...</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="titre" class="form-label">Titre</label>
+            <input name="titre" id="titre" class="form-control" type="text" aria-label="default input example" >
+        </div>
+        <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" name="message" id="message"></textarea>
+        </div>
+        <div class="formBtn">
+            <button type="submit" class="btn btn-danger">Envoyer</button>
+        </div>
+    </form>
+</div> -->
+
+<form class="contact-form" (submit)="sendEmail($event)">
+    <label>Name</label>
+    <input type="text" name="user_name">
+    <label>Email</label>
+    <input type="email" name="user_email">
+    <label>Message</label>
+    <textarea name="message"></textarea>
+    <input type="submit" value="Send">
+</form>

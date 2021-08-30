@@ -1,0 +1,33 @@
+<div class="conatiner">
+    <div class="card">
+        <div class="card-header">
+            <h3>Films</h3>
+        </div>
+        <div class="card-body">
+            <table>
+                <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nom</th>
+                    <th>resume</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let film of films" class="text-center">
+                    
+                    <td>{{film.id}}</td>
+                    <td>{{film.name}}</td>
+                    <td>{{film.resume}}</td>
+                    <td *ngIf=" ">
+                        <button [routerLink]="['/edit', film.id]" class="btn btn-warning">Edit</button>
+                        <button (click)="remove(film.id)"  class="btn btn-danger" style="margin-left: 10px;">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+            </table>
+
+        </div>
+
+    </div>
+
+</div>

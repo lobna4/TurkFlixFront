@@ -1,0 +1,37 @@
+.formulaire{
+    margin-top: 10rem;
+    .input{
+        width: 60%; 
+        margin: auto;
+        margin-top: 2rem;
+        margin-bottom: 0.8rem;  
+    }
+    .title{
+        width: 100%;
+        margin-top: 2rem;
+        font-size: 1.3rem ;
+        color:#DC3545;
+        display: flex;
+        justify-content: center;
+    }
+
+    .form-label, .col-form-label{
+        color: #DC3545;
+    }
+
+    .formBtn{
+        display: flex;
+        justify-content: center;
+    }
+  
+}
+
+@media (min-width:1200px){
+    .formulaire{
+       
+        .title{
+            font-size: 2rem;
+        }
+    }
+    
+}

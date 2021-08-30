@@ -1,0 +1,53 @@
+#navbar-desktop{
+    background-color:#DC3545; 
+    display: none;
+}
+#navbar-mobil{
+    background-color:#DC3545; 
+}
+
+.navbar-toggler-icon{
+    color: white;
+    padding-right: 2.5rem;
+    
+}
+.navbar-expand-lg,.navbar-dark,.bg-dark{
+
+    .dropdown-menu{
+        background-color: #DC3545;
+        border: none;
+    } 
+    .nav-link,.dropdown-item{
+        color: white;
+        cursor: pointer;    
+    }  
+}
+
+
+@media (min-width:1200px) {
+    #navbar-mobil{
+        display: none;
+    }
+    #navbar-desktop{
+        background-color:#DC3545; 
+        display: block;
+    }
+    .navbar-expand-lg,.navbar-dark,.bg-dark{
+     
+        padding-left: 5rem; 
+        padding-right: 5rem;
+
+        .dropdown-menu{
+            background-color: #FECBA1;
+        } 
+        .dropdown-item{
+            color: white;
+        }
+        .dropdown-item:hover{
+            background-color: #DC3545;
+        } 
+        .navbar-brand{
+            background: aliceblue;
+        }
+    }
+}
