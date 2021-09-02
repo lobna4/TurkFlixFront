@@ -5,7 +5,6 @@ import { environment } from 'src/environments/environment';
 import { Film } from '../Model/Film';
 import { User } from '../Model/User';
 import { Router } from '@angular/router';
-import { Role } from '../Model/Role';
 
 @Injectable({
   providedIn: 'root'

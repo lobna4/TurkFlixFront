@@ -25,6 +25,12 @@ export class ListComponent implements OnInit {
         this.films=data;
         console.log(this.films)
       })
+
+      this.service.getUserList()
+    .subscribe(data => {
+      this.users=data;
+      console.log(this.users)
+      })
   }
 
   remove(filmId:any){
@@ -35,16 +41,6 @@ export class ListComponent implements OnInit {
       this.router.navigate(["list"]);
     })
   }
-
-
-    rolesUser(){
-    this.service.getUserList()
-    .subscribe(data => {
-      this.users=data;
-      console.log(this.users)
-      })
-    }
-
 }
 
 

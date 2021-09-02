@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './Account/login/login.component';
 import { SigninComponent } from './Account/signin/signin.component';
+import { UsersListComponent } from './Account/users-list/users-list.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { AddComponent } from './Film/add/add.component';
 import { EditComponent } from './Film/edit/edit.component';
@@ -23,6 +24,7 @@ const routes: Routes = [
     { path:'list', component:ListComponent},
     { path:'add', component:AddComponent},
     { path:'edit/:filmId',component:EditComponent},
+    { path:'listUser', component:UsersListComponent},
     { path:'form',component:FormComponent}
   ]},
   

@@ -1,0 +1,29 @@
+<div class="conatiner">
+    <div class="card">
+        <div class="card-header">
+            <h3>Films</h3>
+        </div>
+        <div class="card-body">
+            <table>
+                <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>lastName</th>
+                    <th>firstName</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let user of users" class="text-center">
+                    
+                    <td>{{user.idUser}}</td>
+                    <td>{{user.lastName}}</td>
+                    <td>{{user.firstName}}</td>
+                </tr>
+            </tbody>
+            </table>
+
+        </div>
+
+    </div>
+
+</div>

@@ -1,7 +1,7 @@
 import { Role } from "./Role";
 
 export class User{
-    id?:number;
+    idUser?:number;
     password?:String;
     lastName?:String;
     firstName?:String;
